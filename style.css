@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3f4fc;
+    height: 100vh;
+}
+
+.content{
+    width: 800px;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.slide-left{
+    width: 50%;
+    padding: 30px;
+    border-radius: 15px 0 0 15px;
+}
+
+.slide-left .head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-left .head h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.slide-left .head button{
+    font-size: 14px;
+    text-transform: capitalize;
+    border: none;
+    background-color: transparent;
+}
+.slide-left .head button:hover{
+    color: rgb(24, 110, 223);
+    border-bottom: 1px solid rgb(24, 110, 223);
+    cursor: pointer;
+}
+
+.slide-left .inputs{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.slide-left .inputs .amount{
+    width: 100%;
+}
+.slide-left .inputs label{
+    display: block;
+    text-transform: capitalize;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.slide-left .inputs .amount input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+}
+
+.slide-left .inputs .years,
+.slide-left .inputs .interest{
+    width: 150px;
+    margin-top: 15px;
+}
+
+.slide-left .inputs .years input,
+.slide-left .inputs .interest input{
+    padding: 8px;
+    outline: none;
+    width: 100%;
+}
+
+.slide-left .type{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.slide-left .type label{
+    text-transform: capitalize;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.slide-left .type div{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #777;
+    margin-block: 10px;
+    border-radius: 4px;
+}
+
+.slide-left .type span{
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.slide-left .btn{
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    width: 70%;
+    text-transform: capitalize;
+    border-radius: 15px;
+    border: none;
+    background-color: goldenrod;
+    display: flex;
+    cursor: pointer;
+}
+
+.slide-left .btn span{
+    display: inline-block;
+    margin: 3px auto;
+}
+.slide-right{
+    width: 50%;
+    background-color: #133040;
+    padding: 30px;
+    border-radius: 0 15px 15px 70px;
+}
+
+.slide-right .show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.slide-right .text{
+    text-align: center;
+}
+
+.slide-right .text h3,
+.slide-right .text p{
+    text-transform: capitalize;
+    color: white;
+}
+
+.slide-right .text-content h3{
+    color: white;
+    text-transform: capitalize;
+}
+
+.slide-right .text-content p{
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #777;
+    margin-block: 10px;
+}
+
+.slide-right .card{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    border-top: 5px solid goldenrod;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #0e2431;
+}
+
+.slide-right .card .month{
+    margin-top: 5px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 20px;
+}
+
+.slide-right .card .month p,
+.slide-right .card .total p{
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #777;
+}
+
+.slide-right .card .total{
+    margin-top: 5px;
+    padding-top: 20px;
+}
+
+h1{
+    font-size: 55px;
+    color: goldenrod;
+}
+
+.slide-right .card .total h2{
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width: 767px){
+    body,
+    .content,
+    .slide-left .head,
+    .slide-left .inputs{
+        display: block;
+    }
+    .content,
+    .slide-left,
+    .slide-right
+    {
+        width: 100%;
+        border-radius: 0;
+    }
+    .slide-left .head button{
+        margin-top: 15px;
+    }
+    .slide-left .btn{
+        width: 100%;
+        display: inline;
+        border-radius: 50px;
+    }
+    .slide-left .inputs .years,
+    .slide-left .inputs .interest{
+        width: 100%;
+    }
+
+}

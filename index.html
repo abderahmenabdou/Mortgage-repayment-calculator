@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <!-- START SLIDE LEFT -->
+        <div class="slide-left">
+
+
+                <!-- START HEADING -->
+                <div class="head">
+                    <h2>mortgage calculator</h2>
+                    <button onclick="clearAll()" type="button">clear all</button>
+                </div>
+                <!-- START HEADING -->
+                
+                <!-- START INPUTS -->
+                <div class="inputs">
+                    <div class="amount">
+                        <label for="">mortgage amount</label>
+                        <input type="text" name="" id="amount">
+                        <br>
+                        <span id="error-amount"></span>
+                    </div>
+                    <div class="years">
+                        <label for="">mortgage term</label>
+                        <input type="text" name="" id="years">
+                        <br>
+                        <span id="error-years"></span>
+                    </div>
+                    <div class="interest">
+                        <label for="">interest rate</label>
+                        <input type="text" name="" id="interest">
+                        <br>
+                        <span id="error-interest"></span>
+                    </div>
+                </div>
+                <!-- END INPUTS -->
+
+                <!-- START MORTGAGE TYPE -->
+                <div class="type">
+                    <label for="">mortgage type</label>
+                    <div>
+                        <input type="checkbox" name="" id="repayment">
+                    <span>repayment</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="interest-only">
+                        <span>interest only</span>
+                    </div>
+                    <span id="error-mortgage"></span>
+                </div>
+                <!-- END MORTGAGE TYPE -->
+
+                <button class="btn" type="submit"><img src="./images/icon-calculator.svg" alt=""><span>calculate repayment</span></button>
+                
+            
+        </div>
+        <!-- END SLIDE LEFT -->
+        
+        <!-- START SLIDE RIGHT -->
+        <div id="result" class="slide-right">
+            <div class="show">
+                <div class="image">
+                    <img src="./images/illustration-empty.svg" alt="">
+                </div>
+                <div class="text">
+                    <h3>results show here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam assumenda.</p>
+                </div>
+            </div>
+
+            <!-- <div class="text-content">
+                <h3>your results</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, quaerat numquam doloremque eos delectus recusandae.</p>
+            </div>
+            <div class="card">
+                <div class="month">
+                    <p>your monthly repayment</p>
+                    <h1>$1254852</h1>
+                </div>
+                <div class="total">
+                    <p>total you'll repay over the term</p>
+                    <h2>$124587</h2>
+                </div>
+            </div> -->
+        </div>
+        <!-- END SLIDE RIGHT -->
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
