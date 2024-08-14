@@ -1,7 +1,7 @@
 let amount = document.getElementById("amount");
 let years = document.getElementById("years");
 let interest = document.getElementById("interest");
-
+let btn = document.querySelector(".btn")
 let result = document.getElementById("result");
 let repayment = document.getElementById("repayment");
 let interestOnly = document.getElementById("interest-only");
@@ -12,6 +12,10 @@ let errorInterest = document.getElementById("error-interest");
 let errorMortgage = document.getElementById("error-mortgage");
 
 let myForm = document.getElementById("myForm");
+
+
+
+
 
 myForm.addEventListener("submit", (event) => {
     event.preventDefault()
@@ -64,6 +68,42 @@ myForm.addEventListener("submit", (event) => {
     clearAll();
   });
 
+// Disable Button Calculate
+/*
+btn.disabled = true;
+amount.addEventListener("input", formValidation)
+years.addEventListener("input", formValidation)
+interest.addEventListener("input", formValidation)
+repayment.addEventListener("change", formValidation)
+interestOnly.addEventListener("change", formValidation)
+
+function formValidation(){
+  isValid = true
+  if(amount.value === ""){
+    isValid = false
+  }
+  if(years.value === ""){
+    isValid = false
+  }
+  if(interest.value === ""){
+    isValid = false
+  }
+  if (repayment.checked && interestOnly.checked) {
+    isValid = false;
+  } else if (!repayment.checked && !interestOnly.checked) {
+    isValid = false;
+  }
+  btn.disabled = !isValid
+}
+
+myForm.addEventListener("submit", (event) => {
+    event.preventDefault()
+
+    showData();
+    clearAll();
+  });
+*/
+
 function showData() {
   let loan = Number(amount.value);
   let loanTerm = Number(years.value);
@@ -96,11 +136,11 @@ function showData() {
             <div class="card">
                 <div class="month">
                     <p>your monthly repayment</p>
-                    <h1>$${installment}</h1>
+                    <h1>£${installment}</h1>
                 </div>
                 <div class="total">
                     <p>total you'll repay over the term</p>
-                    <h2>$${totalAmountPaid}</h2>
+                    <h2>£${totalAmountPaid}</h2>
                 </div>
             </div>
 `;

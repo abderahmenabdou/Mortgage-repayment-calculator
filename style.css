@@ -55,6 +55,18 @@ body{
 }
 .slide-left .inputs .amount{
     width: 100%;
+    position: relative;
+}
+.slide-left .inputs .amount .icon{
+    width: 50px;
+    background-color: #133040;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 28px;
+    line-height: 35px;
 }
 .slide-left .inputs label{
     display: block;
@@ -67,12 +79,28 @@ body{
     width: 100%;
     padding: 8px;
     outline: none;
+    padding-left: 55px;
 }
 
 .slide-left .inputs .years,
 .slide-left .inputs .interest{
     width: 150px;
     margin-top: 15px;
+    position: relative;
+}
+.slide-left .inputs .years .icon,
+.slide-left .inputs .interest .icon{
+    width: 50px;
+    background-color: #133040;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    line-height: 35px;
+    text-transform: capitalize;
 }
 
 .slide-left .inputs .years input,
